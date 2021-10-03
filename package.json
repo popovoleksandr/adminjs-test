@@ -1,0 +1,37 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "Simple application NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ".\\buildw.bat --assembleRelease <version>"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-run": "^1.7.1",
+    "nodemon": "^2.0.13",
+    "sequelize-cli": "^6.2.0",
+    "webpack": "^5.56.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@adminjs/express": "^4.0.0",
+    "@adminjs/sequelize": "^2.0.0",
+    "adminjs": "^5.2.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "tslib": "^2.3.1"
+  }
+}
