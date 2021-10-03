@@ -1,8 +1,8 @@
-const AdminJS = require('adminjs')
-const AdminJSSequelize = require('@adminjs/sequelize')
+const AdminJS = require('admin-bro')
+const AdminJSSequelize = require('@admin-bro/sequelize')
 
 
-const AdminJSExpress = require('@adminjs/express')
+const AdminJSExpress = require('@admin-bro/express')
 
 require('dotenv').config();
 
@@ -12,7 +12,6 @@ if (!global.__basedir) {
 
 
 const db = require('./models');
-const User = require('./models/user')
 
 const express = require('express')
 const app = express()
@@ -36,7 +35,7 @@ const adminBroOptions = {
     // databases: [db],
     resources: [
         {
-            resource: User,
+            resource: db.User,
             options: {
                 navigation: contentNavigation
             },

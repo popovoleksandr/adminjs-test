@@ -1,3 +1,5 @@
 .idea
 .adminjs
+.adminbro
 node_modules
+build
